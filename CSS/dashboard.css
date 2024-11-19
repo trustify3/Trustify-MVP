@@ -1,0 +1,350 @@
+*{
+  font-family: "Geist", sans-serif;
+}
+
+/* General Styles */
+body {
+font-family: Arial, sans-serif;
+background-color: #ffffff;
+color: #333;
+margin: 0;
+padding: 0;
+}
+
+.container {
+padding-left: 3rem; /* Equivalent to px-4 (16px) */
+padding-right: 3rem; /* Equivalent to px-4 (16px) */
+padding-top: 2rem; /* Equivalent to py-8 (32px) */
+padding-bottom: 2rem; /* Equivalent to py-8 (32px) */
+}
+
+.text-sm {
+font-size: 0.875rem; /* 14px */
+}
+
+.font-medium {
+font-weight: 500;
+}
+
+.text-gray-500 {
+color: #6b7280; /* Tailwind gray-500 */
+}
+
+.text-2xl {
+font-size: 1.5rem; /* 24px */
+}
+
+.font-bold {
+font-weight: bold;
+}
+
+.mb-8 {
+margin-bottom: 2rem;
+}
+
+/* Card Styles */
+.card {
+background: #fff;
+border: 1px solid #ddd;
+border-radius: 10px;
+padding: 20px;
+margin-top: 3rem;
+}
+
+.card-header {
+margin-bottom: 1rem;
+}
+
+.card-title {
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.card-content {
+margin-top: 1rem;
+}
+
+/* Grid Styles */
+.grid-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 0.25rem; /* Adjust gap to make it tighter */
+}
+@media (min-width: 768px) {
+.grid-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+/* Progress Bar */
+.progress-bar-container {
+background-color: #e5e7eb; /* Light gray background */
+border-radius: 10px;
+height: 20px;
+overflow: hidden;}
+
+.progress-bar {
+height: 20px;
+background-color: #ddd;
+overflow: hidden;
+position: relative;
+}
+
+.progress-bar span {
+display: block;
+height: 100%;
+background-color: #000000; /* Blue color */
+border-radius: 2px;
+}
+
+/* Stake Button */
+.stake-button {
+background-color: #000;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 1rem;
+display: inline-flex;
+align-items: center;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.stake-button:hover {
+background-color: #333;
+}
+
+.arrow-icon {
+margin-left: 0.5rem;
+height: 1rem;
+width: 1rem;
+}
+
+.font-semibold{
+font-weight: bold;
+}
+
+/* Align the title and invested amount on the same row */
+.investment-row {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 0.5rem; /* Adds spacing between title row and progress bar */
+}
+
+/* Style the investment title */
+.investment-title {
+font-weight: 600; /* Bold */
+margin: 0; /* Remove extra spacing */
+}
+
+/* Align the investment amount to the right */
+.investment-amount {
+font-size: 0.875rem; /* Small text */
+color: #6B7280; /* Gray color */
+text-align: right;
+margin: 0; /* Remove extra spacing */
+}
+
+.projected-return {
+font-size: 0.875rem; /* Small text */
+text-align: right;
+margin-top: 0.25rem; /* Small spacing above */
+}
+
+.navbar {
+background: #ffffff;
+border-bottom: 1px solid #ddd;
+}
+
+.navbar-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: 1200px;
+margin: 0 auto;
+padding: 10px 20px;
+}
+
+.logo a {
+font-size: 2rem;
+color: #000000;
+font-weight: bold;
+text-decoration: none;
+}
+
+.nav-links {
+display: flex;
+gap: 30px;
+list-style: none;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #333;
+font-weight: 500;
+font-size: 1.25rem;
+}
+
+.actions {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.notification-wrapper {
+position: relative;
+}
+
+.notification {
+background: none;
+border: none;
+font-size: 1.2rem;
+cursor: pointer;
+position: relative;
+}
+
+.notification-dropdown {
+display: none;
+position: absolute;
+top: 30px;
+right: 0;
+background: #fff;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+border: 1px solid #ddd;
+border-radius: 4px;
+width: 200px;
+padding: 10px;
+}
+
+.notification-dropdown p {
+margin: 5px 0;
+font-size: 0.9rem;
+color: #333;
+}
+
+.notification-wrapper:hover .notification-dropdown {
+display: block;
+}
+
+.wallet {
+padding: 8px 12px;
+background: #000000;
+color: white;
+border: none;
+border-radius: 7px;
+font-size: 1.25rem;
+padding: 10px 20px;
+cursor: pointer;
+}
+
+.wallet.disconnected {
+background: #000000;
+color: rgb(255, 255, 255);
+}
+
+.hamburger {
+display: none;
+background: none;
+border: none;
+font-size: 1.5rem;
+cursor: pointer;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+display: none;
+background: #f9f9f9;
+position: absolute;
+top: 60px;
+width: 100%;
+left: 0;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu ul {
+list-style: none;
+padding: 10px 0;
+}
+
+.mobile-menu li {
+padding: 10px 20px;
+}
+
+.mobile-menu a {
+text-decoration: none;
+color: #333;
+display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.nav-links {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+}
+
+
+
+
+
+
+/* Notification Card for Pool End */
+.notification-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.notification-card .card-header {
+  margin-bottom: 1rem;
+}
+
+.notification-card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.notification-card .card-content {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.notification-card .choose-project-button {
+  background-color: #000000;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.notification-card .choose-project-button:hover {
+  background-color: #333333;
+}
+
+@media (max-width: 768px) {
+  .notification-card .choose-project-button {
+      width: 100%;
+  }
+}

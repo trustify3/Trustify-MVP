@@ -1,0 +1,224 @@
+/* Universal font family */
+* {
+    font-family: "Geist", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body padding and margin reset */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Container style */
+.custom-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Investment Title style */
+.investment-title {
+    margin-bottom: 32px;
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Grid container for cards */
+.grid-container {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr; /* Default to two columns for larger screens */
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack cards vertically */
+    }
+}
+
+/* Description styling */
+.description {
+    margin-bottom: 16px;
+    color: #6b7280;
+}
+
+/* Spacing for child elements */
+.spacing-container {
+    margin-bottom: 16px;
+}
+
+.spacing-container > * {
+    margin-bottom: 8px;
+}
+
+/* Remove margin from the last child */
+.spacing-container > *:last-child {
+    margin-bottom: 0;
+}
+
+/* Flex container for progress text */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+}
+
+.flex-container span {
+    font-weight: bold;
+}
+
+/* Card and its sections */
+.card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: white;
+}
+
+.card-header {
+    margin-bottom: 16px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-content {
+    margin-bottom: 16px;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.card-footer2 {
+    text-align: center;
+}
+
+/* Progress bar style */
+.progress-bar {
+    height: 8px;
+    background-color: #f3f4f6;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+/* Button style for Invest button */
+.invest-button {
+    padding: 12px 24px;
+    background-color: #000000;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Full width for smaller screens */
+}
+
+.project-detail{
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    border-color: #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Full width for smaller screens */
+    margin-top: 10px;
+}
+
+.invest-button:hover {
+    background-color: #333333;
+}
+
+/* Bold class */
+.bold {
+    font-weight: bold;
+}
+
+/* Description text style */
+.des {
+    color: #6b7280;
+}
+
+/* Main container style */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content on mobile */
+    justify-content: center;
+}
+
+/* Responsive adjustments for small devices */
+@media (max-width: 768px) {
+    .custom-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    /* Adjust card layout for smaller screens */
+    .card {
+        padding: 16px;
+        margin-bottom: 24px;
+    }
+    
+    .card-header h2 {
+        font-size: 1.125rem; /* Smaller title on mobile */
+    }
+
+    .card-content {
+        font-size: 0.875rem; /* Adjust text size for mobile */
+    }
+
+    .progress-bar {
+        margin-bottom: 12px;
+    }
+
+    .investment-title {
+        font-size: 1.5rem;
+        margin-bottom: 24px;
+    }
+}
+
+/* Initially hidden content */
+/* Initially hidden content */
+.project-detail-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding: 0 16px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+/* When open, reveal the content */
+.project-detail-content.open {
+    max-height: 500px;
+    opacity: 1;
+    padding: 16px;
+}
+
+.description {
+    text-align: left; /* Ensures the description text is aligned to the left */
+}
