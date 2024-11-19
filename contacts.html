@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts | Trustify MVP</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="CSS/contacts.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="icon" href="https://res.cloudinary.com/duve0bsgg/image/upload/v1732006079/logo_ptotpi.png">
+
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="logo">
+              <a href="index.html">Trustify</a>
+          </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pools.html">Investment Pools</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+
+            <!-- Action Buttons -->
+            <div class="actions">
+                <!-- Notifications -->
+                <div class="notification-wrapper">
+                    <button class="notification" id="notification">&#128276;</button>
+                    <div class="notification-dropdown" id="notification-dropdown">
+                        <p>Welcome to Trustify!</p>
+                        <hr>
+                        <p>Stay updated on the latest news.</p>
+                    </div>
+                </div>
+
+                <!-- Connect Wallet Button -->
+                <a href="aboutus.html"><button class="wallet">About us</button></a>
+
+                <!-- Hamburger Menu for Mobile -->
+                <button class="hamburger" id="hamburger">&#9776;</button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pools.html">Investment Pools</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 class="title">Connect with Trustify</h1>
+        
+        <div class="grid">
+          <!-- Follow Us Section -->
+          <div class="card">
+            <div class="card-header">
+              <h2>Follow Us</h2>
+            </div>
+            <div class="card-content">
+              <div class="social-links">
+                <a href="https://x.com/Trustify_3" target="_blank" class="social-icon" aria-label="Twitter">
+                  <img src="https://res.cloudinary.com/duve0bsgg/image/upload/v1732006392/twitter-icon_te1ojk.svg" alt="Twitter">
+                </a>
+                <a href="https://discord.com/invite/2Mv6VmyqZ3" target="_blank" class="social-icon" aria-label="Discord">
+                  <img src="https://res.cloudinary.com/duve0bsgg/image/upload/v1732006392/discord-icon_o11idv.svg" alt="Discord">
+                </a>
+                <a href="#" target="_blank" class="social-icon" aria-label="Telegram">
+                  <img src="https://res.cloudinary.com/duve0bsgg/image/upload/v1732006392/telegram-icon_xr6f2n.svg" alt="Telegram">
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Newsletter Section -->
+          <div class="card">
+            <div class="card-header">
+              <h2>Join Our Newsletter</h2>
+            </div>
+            <div class="card-content">
+              <form id="newsletter-form" class="newsletter-forms">
+                <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+                <span id="loading-newsletter" style="display: none;">Loading...</span>
+              </form>
+              <p id="message"></p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Contact Us Section -->
+        <div class="card contact-card">
+          <div class="card-header">
+            <h2>Contact Us</h2>
+          </div>
+          <div class="card-content">
+            <form class="contact-forms" id="contact-form">
+              <input type="text" id="contact-name" placeholder="Your Name" required>
+              <input type="email" id="contact-email" placeholder="Your Email" required>
+              <textarea id="contact-message" placeholder="Your Message" required></textarea>
+              <button type="submit">Send Message</button>
+              <span id="loading" style="display: none;">Loading...</span>
+          </form>
+            <p id="response"></p>
+          </div>
+        </div>
+      </div>
+    <!-- JavaScript -->
+     <script src="Javascript/contacts.js"></script>
+    <script src="Javascript/navbar.js"></script>
+</body>
+
+</html>

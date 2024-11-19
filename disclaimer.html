@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer | Trustify MVP</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="CSS/dislclaimer.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="icon" href="https://res.cloudinary.com/duve0bsgg/image/upload/v1732006079/logo_ptotpi.png">
+
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">Trustify</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+
+            <!-- Action Buttons -->
+            <div class="actions">
+                <!-- Notifications -->
+                <div class="notification-wrapper">
+                    <button class="notification" id="notification">&#128276;</button>
+                    <div class="notification-dropdown" id="notification-dropdown">
+                        <p>Welcome to Trustify!</p>
+                        <hr>
+                        <p>Stay updated on the latest news.</p>
+                    </div>
+                </div>
+
+                <!-- Connect Wallet Button -->
+                <a href="aboutus.html"><button class="wallet">About us</button></a>
+
+                <!-- Hamburger Menu for Mobile -->
+                <button class="hamburger" id="hamburger">&#9776;</button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pools.html">Investment Pools</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="disclaimer-card">
+            <div class="header">
+                <h2>Trustify Disclaimer</h2>
+                <p>Please read this important information carefully before using our services</p>
+            </div>
+            <div class="content">
+                <!-- Disclaimer Sections -->
+                <section class="disclaimer-section">
+                    <h3>1. Investment Risks</h3>
+                    <p>Investing in cryptocurrencies and blockchain-based assets involves significant risks, including but not limited to:</p>
+                    <ul>
+                      <li>High volatility and potential for rapid and substantial losses</li>
+                      <li>Regulatory uncertainties and potential changes in legal status</li>
+                      <li>Technical vulnerabilities and the risk of hacking or theft</li>
+                      <li>Market manipulation and lack of liquidity in some assets</li>
+                    </ul>
+                    <p>Investors should carefully consider their financial situation and risk tolerance before investing. Past performance is not indicative of future results.</p>
+                  </section>
+                  <section class="disclaimer-section">
+                    <h3>2. Not Financial Advice</h3>
+                    <p>The information provided on Trustify, including investment opportunities, market analysis, and educational content, is for informational purposes only and should not be considered financial advice. We strongly recommend consulting with a qualified financial advisor before making any investment decisions.</p>
+                  </section>
+                  <section class="disclaimer-section">
+                    <h3>3. User Responsibility</h3>
+                    <p>Users of Trustify are solely responsible for:</p>
+                    <ul>
+                      <li>Conducting their own due diligence on all investment opportunities</li>
+                      <li>Ensuring compliance with local laws and regulations regarding cryptocurrency investments</li>
+                      <li>Maintaining the security of their account credentials and private keys</li>
+                      <li>Reporting accurate tax information to relevant authorities</li>
+                    </ul>
+                  </section>
+                  <section class="disclaimer-section">
+                    <h3>4. Platform Limitations</h3>
+                    <p>While we strive to provide a secure and reliable platform, Trustify:</p>
+                    <ul>
+                      <li>Cannot guarantee the accuracy of all information provided by project teams or other users</li>
+                      <li>Is not responsible for any losses incurred due to market conditions, user error, or technical issues</li>
+                      <li>May experience downtime for maintenance or unforeseen technical difficulties</li>
+                    </ul>
+                  </section>
+                  <section class="disclaimer-section">
+                    <h3>5. Changes to Terms</h3>
+                    <p>Trustify reserves the right to modify this disclaimer at any time. Users will be notified of any changes, and continued use of our services after such modifications constitutes acceptance of the updated terms.</p>
+                  </section>
+                  <section class="disclaimer-section">
+                    <h3>6. Contact Us</h3>
+                    <p>If you have any questions about this disclaimer, please contact us at <span class="email">trustify3@gmail.com</span>.</p>
+                </section>
+                <hr>
+                <div class="agree-section">
+                    <p>By using Trustify's services, you acknowledge that you have read, understood, and agree to this disclaimer.</p>
+                    <div id="galaxy-container"></div>
+                    <button class="agree-button" onclick="startGalaxy()">I Understand and Agree</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Emoji Rain Container -->
+    <div class="emoji-rain"></div>
+
+    <!-- JavaScript -->
+    <script src="Javascript/disclaimer.js"></script>
+</body>
+
+</html>

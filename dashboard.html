@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Trustify MVP</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="CSS/dashboard.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="icon" href="https://res.cloudinary.com/duve0bsgg/image/upload/v1732006079/logo_ptotpi.png">
+
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">Trustify</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pools.html">Investment Pools</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+
+            <!-- Action Buttons -->
+            <div class="actions">
+                <!-- Notifications -->
+                <div class="notification-wrapper">
+                    <button class="notification" id="notification">&#128276;</button>
+                    <div class="notification-dropdown" id="notification-dropdown">
+                        <p>Welcome to Trustify!</p>
+                        <hr>
+                        <p>Stay updated on the latest news.</p>
+                    </div>
+                </div>
+
+                <!-- Connect Wallet Button -->
+                <a href="aboutus.html"><button class="wallet">About us</button></a>
+
+                <!-- Hamburger Menu for Mobile -->
+                <button class="hamburger" id="hamburger">&#9776;</button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pools.html">Investment Pools</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 class="mb-8 text-3xl font-bold">User Dashboard</h1>
+        <div class="space-y-8">
+            <!-- Portfolio Overview -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Portfolio Overview</h2>
+                </div>
+                <div class="card-content">
+                    <div class="grid-container">
+                        <div>
+                            <p class="text-sm font-medium text-gray-500">Total Invested</p>
+                            <p class="text-2xl font-bold">$50,000</p>
+                        </div>
+                        <div>
+                            <p class="text-sm font-medium text-gray-500">Available balance</p>
+                            <p class="text-2xl font-bold">$576</p>
+                        </div>
+                        <div>
+                            <p class="text-sm font-medium text-gray-500">Active Investments</p>
+                            <p class="text-2xl font-bold">2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                    <!-- Notification Card for October Pool End -->
+        <div class="notification-card">
+            <div class="card-header">
+                <h2 class="card-title">October Pool is Ended</h2>
+            </div>
+            <div class="card-content">
+                <p class="text-sm font-medium text-gray-500">Choose your investment project where you want to actually invest your money other you lose your fund!</p>
+                <a href="chooseproject.html"><button class="choose-project-button">Choose Project</button></a>
+            </div>
+        </div>
+            <!-- Active Investments -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Active Investments</h2>
+                </div>
+                <div class="card-content">
+                    <div class="space-y-4">
+                        <div>
+                            <div class="investment-row">
+                                <h3 class="investment-title">AI Data Pool</h3>
+                                <p class="investment-amount">$30,000 invested</p>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar">
+                                    <span style="width: 60%;"></span>
+                                </div>
+                            </div>
+                            <p class="projected-return">Projected return: $36,000</p>
+                        </div>
+                        <div>
+                            <div class="investment-row">
+                                <h3 class="investment-title">October Pool</h3>
+                                <p class="investment-amount">$20,000 invested</p>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar">
+                                    <span style="width: 40%;"></span>
+                                </div>
+                            </div>
+                            <p class="projected-return">Projected return: $26,500</p>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <button class="stake-button">
+                                <a href="pools.html" style="text-decoration: none; color: white;">
+                                    Explore more Pools
+                                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path d="M10 19l5-5-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+            <!-- Staking Rewards -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Staking Rewards</h2>
+                </div>
+                <div class="card-content">
+                    <div class="grid-container">
+                        <div>
+                            <p class="text-sm font-medium text-gray-500">Staked Amount</p>
+                            <p class="text-2xl font-bold">$5,000 $TRUST</p>
+                        </div>
+                        <div>
+                            <p class="text-sm font-medium text-gray-500">APY</p>
+                            <p class="text-2xl font-bold">16.74%</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button class="stake-button">
+                            Stake Now
+                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M10 19l5-5-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- JavaScript -->
+</body>
+</html>
